@@ -34,6 +34,7 @@ setup(
     version="1.0.0",
     description="Package for fetching of data from Stooq.com",
     long_description=(pathlib.Path(__file__).parent / "README.md").read_text(),
+    long_description_content_type='text/markdown',
     author="Artur Wegrzyn",
     packages=find_packages(),
     install_requires=read_requirements("requirements.txt")
