@@ -30,10 +30,9 @@ def read_requirements(path):
 
 setup(
     name="pystooq",
-    version="0.0.1",
+    version="1.0.0",
     description="Package for fetching of data from Stooq.com",
     author="Artur Wegrzyn",
     packages=find_packages(),
     install_requires=read_requirements("requirements.txt")
 )
-
