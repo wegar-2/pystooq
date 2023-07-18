@@ -15,7 +15,7 @@ from datetime import date
 
 fetcher = StooqDataFetcher()
 data_df = fetcher.get_data(
-    tickers=["", ""],
+    tickers=["PKO", "TPE"],
     start=date(2020, 4, 1),
     end=date(2022, 10, 31)
 )
