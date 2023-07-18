@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 import io
-
+import pathlib
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely.
@@ -28,10 +28,12 @@ def read_requirements(path):
     ]
 
 
+
 setup(
     name="pystooq",
     version="1.0.0",
     description="Package for fetching of data from Stooq.com",
+    long_description=(pathlib.Path(__file__).parent / "README.md").read_text(),
     author="Artur Wegrzyn",
     packages=find_packages(),
     install_requires=read_requirements("requirements.txt")
